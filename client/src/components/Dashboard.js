@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TaskCard from "./TaskCard";
 import TaskModal from "./TaskModal";
-import "./Dashboard.css";
+import "../styles/styles.css";
 
 const statuses = ["todo", "in progress", "done"];
 
@@ -10,7 +10,9 @@ export default function Dashboard({ tasks, reload, createTask, updateTask, delet
 
   return (
     <div>
-      <button onClick={() => setShowModal(true)}>+ Add Task</button>
+  <button className="add-task-btn" onClick={() => setShowModal(true)}>
+  + Add Task
+</button>
 
       <div className="board">
         {statuses.map(status => (

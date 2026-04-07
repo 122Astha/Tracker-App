@@ -1,5 +1,5 @@
 import React from "react";
-import "./TaskCard.css";
+import "../styles/styles.css";
 
 export default function TaskCard({ task, updateTask, deleteTask, reload }) {
   const move = async () => {
